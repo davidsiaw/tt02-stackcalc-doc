@@ -1,0 +1,305 @@
+
+@media print {
+  body {
+  }
+        
+    .pagebreak {
+      clear: both;
+      page-break-after: always;
+  }
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src:  url('overpass-light.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src:  url('overpass-bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'InterLight';
+  src:  url('Inter-Light-BETA.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Inter';
+  src:  url('Inter-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Inter';
+  src:  url('Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'LinLibertine';
+  src:  url('LinLibertine_aDRS.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'LinLibertine';
+  src:  url('LinLibertine_RI.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LinLibertine';
+  src:  url('LinLibertine_RB.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'LinLibertineCaps';
+  src:  url('LinLibertine_aS.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LinLibertineCaps';
+  src:  url('LinLibertine_aBS.ttf') format('truetype');
+  font-weight: bold;
+}
+
+body {
+  font-family: Overpass;
+  background-color: hsla(232,15%,21%,1);
+  color: hsla(232,75%,95%,1);
+  text-align: justify;
+  text-justify: inter-word;
+
+
+  font-size: 1.55rem;
+  font-weight: 200;
+}
+
+body:not(.mini-navbar) {
+  background-color: hsla(232,15%,21%,1);
+
+}
+
+@font-face {
+  font-family: 'FiraCodeLight';
+  src:  url('FiraCode-Light.ttf') format('truetype')
+}
+
+
+@font-face {
+  font-family: 'FiraCode';
+  src:  url('FiraCode-Regular.ttf') format('truetype')
+}
+
+.gray-bg {
+  background-color: hsla(232,15%,21%,1);
+}
+
+.border-bottom {
+  border-bottom: 0px !important;
+}
+
+.navbar-static-top {
+  background: hsla(232,15%,21%,1);
+  display: none;
+}
+
+.nav>li {
+  font-size: 1.55rem;
+  font-family: Verdana;
+  line-height: 1.0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+.nav>li>a {
+  font-size: 1.55rem;
+  color: hsla(232,75%,95%,1);
+  font-weight: 100;
+  padding-left: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+h1 {
+  font-family: 'LinLibertine';
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'LinLibertine';
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'LinLibertine';
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: 'LinLibertineCaps';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-family: 'LinLibertineCaps';
+  font-size: 2.3rem;
+  font-weight: normal;
+}
+
+h6 {
+  font-family: 'LinLibertineCaps';
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+
+hr {
+  border-top: 2px solid #000;
+}
+
+li {
+  font-weight: 100;
+}
+
+p {
+  text-indent: 1.5em;
+  margin-bottom: 20px;
+}
+
+p.noindent {
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 0em;
+}
+
+.dropcap {
+  font-size: 5.5rem;
+  float: left;
+  margin-right: 0.2rem;
+  margin-top: -1.5rem;
+  margin-bottom: -3.0rem;
+}
+
+hr {
+  border: 1px solid hsla(232,18%,86%,1);
+}
+
+blockquote {
+  border: 0px;
+  border-left: 5px solid hsla(232,18%,86%,1);
+  padding: 5px 10px;
+  font-size: 1.4rem;
+}
+
+.CodeMirror {
+  /* Set height, width, borders, and global font properties here */
+  font-family: FiraCode;
+  height: 300px;
+  border: 1px solid hsla(232,15%,15%,1);;
+
+}
+
+.CodeMirror-gutters {
+  border-right: 1px solid hsla(232,15%,21%,1);;
+
+}
+
+.CodeMirror-gutter {
+  border: 1px solid hsla(232,15%,15%,1);;
+  background-color: hsla(232,15%,15%,1);
+  white-space: nowrap;
+}
+
+.CodeMirror-lines {
+  white-space: nowrap;
+  font-size: 1.25rem;
+  font-family: FiraCode;
+}
+
+.CodeMirror.cm-s-default {
+  background-color: hsla(232,15%,15%,1);
+}
+
+pre {
+  border: 1px solid hsla(232,15%,15%,1);
+  background-color: hsla(232,15%,15%,1);
+  color: hsla(232,18%,86%,1);
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: FiraCode;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.btn-primary {
+  background-color: #000;
+  border-color: #000;
+}
+
+
+.simpletable .table {
+  width: auto;
+}
+
+.simpletable .table>thead:first-child>tr:first-child>th {
+  border-top: 1px solid #e7eaec;
+}
+.simpletable .table th {
+  border: 1px solid #e7eaec;
+}
+.simpletable .table td {
+  border: 1px solid #e7eaec;
+}
+.simpletable .pagination {
+  display: none;
+}
+
+
+.n_bold {
+  font-weight: bold;
+}
+
+.n_italic {
+  font-style: italic;
+}
+
+.n_underline {
+  text-decoration: underline;
+}
+
+.n_overline {
+  text-decoration: overline;
+}
+
+.n_strikeout {
+  text-decoration: line-through;
+}
+
+
+
+.blog h1 {
+  font-family: FiraCode;
+}
+
+.blog h2 {
+  font-family: FiraCodeLight;
+}
+
+.blog p {
+  text-align: left;
+  color: hsla(232,18%,86%,1);
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: FiraCodeLight;
+  text-indent: 0em;
+  white-space: pre-wrap;
+}
+
