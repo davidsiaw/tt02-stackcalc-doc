@@ -12,6 +12,7 @@ jobs:
       run: |
         bundle install -j4
         bundle exec weaver build --root https://davidsiaw.github.io/tt02-stackcalc-doc/
+        rm -rf build/js/MathJax
     - uses: actions/upload-artifact@master
       with:
         name: page
