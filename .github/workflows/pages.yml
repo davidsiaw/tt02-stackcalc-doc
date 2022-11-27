@@ -1,25 +1,27 @@
-  pages:
-    container:
-      image: davidsiaw/weaver
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    outputs:
-      page_url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-    - name: checkout repo
-      uses: actions/checkout@v3
-    - name: generate
-      run: |
-        bundle install -j4
-        bundle exec weaver build --root https://davidsiaw.github.io/tt02-stackcalc-doc/
-    - name: Setup Pages
-      uses: actions/configure-pages@v2
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
-      with:
-        path: 'build'
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v1.2.2
+pages:
+  container:
+    image: davidsiaw/weaver
+  environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+  outputs:
+    page_url: ${{ steps.deployment.outputs.page_url }}
+  runs-on: ubuntu-latest
+  steps:
+  - name: checkout repo
+    uses: actions/checkout@v3
+  - name: generate
+    run: |
+      bundle install -j4
+      bundle exec weaver build --root https://davidsiaw.github.io/tt02-stackcalc-doc/
+  - name: Setup Pages
+    uses: actions/configure-pages@v2
+  - name: Upload artifact
+    uses: actions/upload-pages-artifact@v1
+    with:
+      path: 'build'
+  - name: Deploy to GitHub Pages
+    id: deployment
+    uses: actions/deploy-pages@v1.2.2
+on:
+  - push
