@@ -1,0 +1,84 @@
+type: blog
+title: Establishing the rules
+---
+
+# Rules
+
+  These are the new rules for a blog post on my website. Often when I write I find myself writing several kinds of articles:
+
+- blog posts
+- opinion pieces
+- manuals
+
+  I discovered that these articles are usually essays or braindumps that I may or may not have structured properly.
+With blog posts, they are usually unstructured, and full of subjective opinion. Often however, I would also write
+something highly structured, but it would still be opinionated. I realized these essays I would think of as opinion
+pieces. Also I would write long structured essays that only stated hard facts, with no opinions, and I found that
+these were great reference manuals.
+
+  Following this its possible to organize these articles into a grid that categorize them by their structuredness and
+objectivity:
+
++------------+------------+--------------+
+|            | Structured | Unstructured |
++============+============+==============+
+| Objective  |   Manual   |      ??      |
++------------+------------+--------------+
+| Subjective |   Opinion  |     Blog     |
++------------+------------+--------------+
+
+  With this I noticed a gap, where there can be an unstructured but objective article also that I write, I found that
+this is often the way I would write in a freeform document known as a Wiki. With this newfound knowledge I felt that
+my website should actually separate these kinds of articles this way:
+
++------------+------------+--------------+
+|            | Structured | Unstructured |
++============+============+==============+
+| Objective  |   Manual   |     Wiki     |
++------------+------------+--------------+
+| Subjective |   Opinion  |     Blog     |
++------------+------------+--------------+
+
+# Visual Styles
+
+  Often I find that visual styles of different documents cause me to get tired faster or slower, and I noticed that some
+documents which are easier to read and create less mental load allow me to read them well and for much longer. The
+objective of this document is to guide an effort to make documents which are much more beautiful to read and easier on
+the eyes.
+
+*note*
+I wanted to use as few fonts as possible so reading does not get impeded.
+
+  Originally I wanted to use Libertine as the paragraph font but after several
+days of playing around with it I noticed that serif fonts on bright high contrast
+displays can become quite difficult to read, especially on a dark background.
+
+
+# The Margin
+
+  The margin is a more web-oriented way of placing footer content on a long-scrolling
+webpage.
+
+That is what it is for.
+
+# Other things
+
+Things like horizontal rules should be typable as well:
+
+---
+
+# Inside a paragraph
+
+  You can style text in various ways inside a paragraph using Nicedoc. The basic styling options that 
+markdown provides are available, such as **bold** and *italic*.
+
+  However unlike Markdown you can also style your text as __underline__, ^^overline^^ and --strikeout--. these
+additional options give your documentation a lot more readability and provide people who read your
+documentation more appropriate visual cues. It is also possible to **combine *multiple* features**.
+
+# Links
+
+  This is an example of a markdown link to a page called [something](something).
+Markdown links can link to stuff relative to this page, and work the same as most markdown linkage.
+
+

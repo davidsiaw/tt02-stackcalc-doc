@@ -1,0 +1,14 @@
+include "main.rb"
+include "util.rb"
+
+Util.instance.generate_css
+
+Dir["pages/**/*.nd"].each do |x|
+  path = x.sub(%r{^pages/}, '')
+  path.sub!(%r{.nd$}, '')
+  path.sub!(%r{top$}, '') if x.end_with? '/top.nd'
+  path.sub!(%r{/$}, '') if path.end_with? '/'
+
+  page x, path
+  source_page x, path + '.src'
+end
